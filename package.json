@@ -11,18 +11,6 @@
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "yarn lint",
-      "yarn prettier",
-      "git add"
-    ]
-  },
   "dependencies": {
     "axios": "^0.27.2",
     "element-plus": "^2.2.13",
@@ -53,5 +41,8 @@
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-svg-icons": "^2.0.1",
     "vue-tsc": "^0.39.5"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx}": ["yarn prettier", "yarn lint"]
   }
 }
