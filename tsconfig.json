@@ -20,12 +20,6 @@
     "allowSyntheticDefaultImports": true, // 允许默认导入
     "types": ["element-plus/global", "vite-plugin-svg-icons/client"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "*.ts"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
